@@ -3,7 +3,7 @@ import * as dotenv from 'dotenv';
 import cors from 'cors';
 import { Configuration, OpenAIApi } from 'openai';
 
-const port = 5000;
+const PORT = 5000;
 dotenv.config();
 
 const configuration = new Configuration({
@@ -44,8 +44,8 @@ app.post('/', async(req, res) => {
    }
 });
 
-app.listen(port, () => {
-   console.log(`Server is running on port http://localhost:${port}`);
+app.listen(PORT, () => {
+   console.log(`Server is running on port http://localhost:${PORT}`);
 })
 
 
